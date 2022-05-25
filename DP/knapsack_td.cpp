@@ -2,19 +2,17 @@
 using namespace std;
 
 int solve(vector<int> wt, vector<int> val, int w, int n, vector<vector<int>>& t){
-	if(t[n][w]!=-1){
-		return t[n][w];
+	for(int i=1; i<n+1; i++){
+		for(int j=1; j<w+1; j++){
+			if(wt[i][j]<j){
+				t[i][j] = max(val[i-1]+ t[i-1][j-wt[i-1]], t[i-1][j]);
+			}
+			else{
+				t[i][j] = t[i-1][j];
+			}
+		}
 	}
-	if(wt[n-1]<=w){
-		return t[n][w] = max(val[n-1]+t[n-1][w-wt[n-1]], t[n-1][w]);
-
-		// return t[n][w] = max( val[n-1]+solve(wt, val, w-wt[n-1], n-1), solve(wt, val, w, n-1));
-	}
-	else{
-		return t[n][w] = t[n-1][w];
-
-		// return t[n][w] = solve(wt, val, w, n-1);
-	}
+	return t[n][w];
 }
 
 int main(){
@@ -22,6 +20,6 @@ int main(){
 	vector<int> wt = {1, 3, 4, 5};
 	vector<int> val = {1, 4, 5, 7};
 	vector<vector<int>> t(n+1, vector<int> (w+1, 0));
-	cout<<t[n][w]<<"\n";
+	cout<<solve(wt, val, w, n, t)<<"\n";
 	return 0;
 }
