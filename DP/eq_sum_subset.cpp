@@ -16,13 +16,22 @@ bool solve(vector<int> v, int n, int sum, vector<vector<bool>> &t){
 }
 
 int main(){
-	int n = 5;
-	int sum = 11;
-	vector<vector<bool>> t(n+1, vector<bool> (sum+1, false));
-	for(int i=0; i<n+1; i++){
-		t[i][0] = true;
+	vector<int> arr = {1, 11, 5, 5};
+	int n = 4;
+	int sum = 0;
+	for(auto it:arr){
+		sum+=it;
 	}
-	vector<int> v = {2, 3, 5, 8, 4};
-	cout<<solve(v, n, sum, t)<<"\n";
+	if(sum&1){
+		cout<<false<<"\n";
+	}
+	else{
+		sum/=2;
+		vector<vector<bool>> t(n+1, vector<bool> (sum+1, false));
+		for(int i=0; i<n+1; i++){
+			t[0][i] = true;
+		}
+		cout<<solve(arr, n, sum, t)<<"\n";
+	}
 	return 0;
 }
