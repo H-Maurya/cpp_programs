@@ -1,3 +1,5 @@
+//All substring of a given string 
+
 #include <bits/stdc++.h>
 using namespace std;
 

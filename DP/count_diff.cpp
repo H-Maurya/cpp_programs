@@ -1,3 +1,5 @@
+//Number of subset pairs with given difference
+
 #include <bits/stdc++.h>
 using namespace std;
 

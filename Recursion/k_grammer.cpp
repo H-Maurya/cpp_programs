@@ -1,3 +1,11 @@
+//Return kth symbol of nth row  1=>10  0=>01
+//	1
+//	10
+//	1001
+//  10010110
+//  .........
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

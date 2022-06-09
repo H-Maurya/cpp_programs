@@ -1,3 +1,5 @@
+//Check if a subset exist for given sum recursive
+
 #include <bits/stdc++.h>
 using namespace std;
 

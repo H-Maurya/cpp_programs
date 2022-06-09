@@ -1,3 +1,5 @@
+//Generate binary strings with #1 > #0 in each prefix
+
 #include <bits/stdc++.h>
 using namespace std;
 

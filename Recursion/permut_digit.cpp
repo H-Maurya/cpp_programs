@@ -1,3 +1,5 @@
+//All permutation of string with case change and digit
+
 #include <bits/stdc++.h>
 using namespace std;
 

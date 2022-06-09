@@ -1,3 +1,5 @@
+//Number of subsets with given sum
+
 #include <bits/stdc++.h>
 using namespace std;
 

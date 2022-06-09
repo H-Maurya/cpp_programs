@@ -1,3 +1,5 @@
+//Number of ways to get the given number as difference of two subsets
+
 #include <bits/stdc++.h>
 using namespace std;
 

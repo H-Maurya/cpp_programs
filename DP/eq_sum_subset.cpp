@@ -1,3 +1,5 @@
+//Check whether subset with equal sum exists or not
+
 #include <bits/stdc++.h>
 using namespace std;
 
