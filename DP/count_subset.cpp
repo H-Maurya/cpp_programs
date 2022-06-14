@@ -18,9 +18,9 @@ int solve(vector<int> v, int n, int sum, vector<vector<int>> &t){
 }
 
 int main(){
-	int n = 6;
-	int sum = 10;
-	vector<int> v = {2, 3, 5, 6, 8, 10};
+	int n = 3;
+	int sum = 2;
+	vector<int> v = {1,1,1};
 	vector<vector<int>> t(n+1, vector<int> (sum+1, 0));
 	for(int i=0; i<n+1; i++){
 			t[i][0] = 1;
