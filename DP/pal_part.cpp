@@ -15,7 +15,7 @@ bool isPal(string s, int i, int j){
     return true;
 }
 
-solve(string s, int i, int j){
+int solve(string s, int i, int j){
 	int ans = INT_MAX;
 	if(i>=j){
 		return 0;
