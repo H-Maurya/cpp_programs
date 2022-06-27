@@ -18,9 +18,9 @@ int solve(vector<int> coin, int n, int sum, vector<vector<int>> &t){
 }
 
 int main(){
-	int n = 3;
-	vector<int> coin = {8,1,2};
-	int sum = 5;
+	int n = 2;
+	vector<int> coin = {1,2};
+	int sum = 2;
 	vector<vector<int>> t(n+1, vector<int> (sum+1, INT_MAX-1));
 	for(int i=1; i<n+1; i++){
 		t[i][0] = 0;
