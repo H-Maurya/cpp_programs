@@ -1,7 +1,4 @@
-/*
-    Author's Name: Prakarsh Gupta
-    Date Modified: 02-10-2022
-*/
+
 #include <iostream>
 using namespace std;
 
